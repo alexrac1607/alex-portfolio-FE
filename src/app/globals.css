@@ -72,3 +72,19 @@ a:hover {
   box-shadow: inset 100px 0 0 0 #444242;
   color: white;
 }
+
+.github-link:hover img {
+  filter: invert(1);
+}
+
+.logo-container > .image-hover {
+  width: 35px; 
+  height: 35px; 
+  background-image: url('../../public/github-mark.png'); 
+  background-size: cover; 
+  transition: background-image 0.5s ease-in-out; 
+}
+
+.github-link:hover .image-hover {
+  background-image: url('../../public/github-mark-white.png'); 
+}
