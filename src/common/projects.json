@@ -8,6 +8,7 @@
   },
   {
     "url": "https://project2.example.com",
+    "title": "Dummy",
     "description": "Project 2 Description",
     "imageSrc": "/images/project2.png",
     "githubUrl": "https://github.com/user/project2"
