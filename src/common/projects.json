@@ -1,0 +1,15 @@
+[
+  {
+    "url": "https://robobros-a6a48.web.app/",
+    "title": "Robobros",
+    "description": "First time trying out React - just playing around during a course with a free API. At this point this is so old it could be called legacy code.",
+    "imageSrc": "/robobros.png",
+    "githubUrl": "https://github.com/alexrac1607/Robobros-react-redux-app"
+  },
+  {
+    "url": "https://project2.example.com",
+    "description": "Project 2 Description",
+    "imageSrc": "/images/project2.png",
+    "githubUrl": "https://github.com/user/project2"
+  }
+]

@@ -1,34 +1,51 @@
-interface ProjectTileProps {
-  url: string;
-  description: string;
-  imageSrc: string; // If you want to include an image for the project
-}
+import { Project } from "@/common/types";
+import Image from "next/image";
 
 export default function ProjectTile({
   url,
+  title,
   description,
   imageSrc,
-}: ProjectTileProps) {
+  githubUrl,
+}: Project) {
   return (
-    <div className="border rounded-lg shadow-lg p-4 m-4 max-w-sm">
+    <div className="cursor-pointer border rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 hover:shadow overflow-hidden h-full">
       {imageSrc && (
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <img
-            src={imageSrc}
-            alt={description}
-            className="w-full h-48 object-cover rounded-md mb-4"
-          />
-        </a>
+        <Image
+          src={imageSrc}
+          alt={description}
+          className="border-b md:h-[180px] object-cover object-center"
+          width={430}
+          height={180}
+          sizes="(min-width: 768px) 347px, 192px"
+        />
       )}
-      <p className="text-lg font-semibold mb-2">{description}</p>
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-blue-500 hover:underline"
-      >
-        View Project
-      </a>
+      <div className="flex flex-col items-center mr-2 ml-2">
+        <h3 className="text-xl mb-2 leading-snug font-bold border-2  border-black">
+          <p className="mr-3 ml-3">{title}</p>
+        </h3>
+        <p className="text-md leading-relaxed mb-4 mr-2 ml-2">{description}</p>
+        <div className="flex space-x-4">
+          <a
+            href={url}
+            className="font-slim text-black"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+          </a>
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              className="font-slim text-black"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          )}
+        </div>
+      </div>
     </div>
   );
 }
