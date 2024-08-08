@@ -1,3 +1,6 @@
+import Image from "next/image";
+import linkedInlogo from "../../../public/LI-Logo.png";
+
 export default function Footer() {
   return (
     <footer className="flex flex-col md:flex-row justify-between items-center h-auto md:h-20 border-t-2 mt-8 px-4 md:px-8 py-4 md:py-0">
@@ -9,17 +12,22 @@ export default function Footer() {
           href="https://github.com/alexrac1607"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black border-2 border-black p-1 rounded hover:bg-black hover:text-white transition github-link logo-container"
+          className="text-black border-2 border-black p-1 rounded hover:bg-black hover:text-white transition github-link logo-container flex items-center"
         >
           <div className="image-hover" />
         </a>
         <a
-          href="https://linkedin.com/in/your-linkedin-username"
+          href="https://www.linkedin.com/in/alexandru-r%C4%83chit%C4%83-976138186/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black border-2 border-black px-3 py-1 rounded hover:bg-black hover:text-white transition"
+          className="text-black border-2 border-black px-3 py-1 rounded hover:bg-black hover:text-white transition flex items-center"
         >
-          LinkedIn
+          <Image
+            src={linkedInlogo}
+            alt="LinkedIn logo"
+            height={50}
+            width={120}
+          />
         </a>
       </div>
     </footer>

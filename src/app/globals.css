@@ -64,12 +64,10 @@ body {
 a {
   box-shadow: inset 0 0 0 0 #b8babb;
   color:    #b1bbbe;
-  margin: 0 -.25rem;
-  padding: 0 .25rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
 }
 a:hover {
-  box-shadow: inset 100px 0 0 0 #444242;
+  box-shadow: inset 200px 0 0 0 #444242;
   color: white;
 }
 
@@ -78,8 +76,8 @@ a:hover {
 }
 
 .logo-container > .image-hover {
-  width: 35px; 
-  height: 35px; 
+  width: 38px; 
+  height: 38px; 
   background-image: url('../../public/github-mark.png'); 
   background-size: cover; 
   transition: background-image 0.5s ease-in-out; 

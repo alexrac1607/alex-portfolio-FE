@@ -34,10 +34,10 @@ export default function AnimatedContent() {
     }, 500);
 
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   return (
-    <div className="relative max-w-6xl mx-auto px-4 md:px-8 h-full pt-8 md:py-24">
+    <div className="relative max-w-6xl mx-auto px-4 md:px-8 pt-8 md:py-24">
       {messages.slice(0, step + 1).map((message, index) => (
         <p key={index} className={`mb-4 slide-in ${message.className}`}>
           {message.text}
