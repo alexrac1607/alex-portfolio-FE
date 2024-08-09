@@ -1,5 +1,5 @@
 import Image from "next/image";
-import linkedInlogo from "../../../public/LI-Logo.png";
+import linkedInlogo from "./../../../public/LI-Logo.png";
 
 export default function Footer() {
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
           href="https://github.com/alexrac1607"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black border-2 border-black p-1 rounded hover:bg-black hover:text-white transition github-link logo-container flex items-center"
+          className="text-black border-2 link border-black p-1 rounded hover:bg-black hover:text-white transition github-link logo-container flex items-center"
         >
           <div className="image-hover" />
         </a>
@@ -20,7 +20,7 @@ export default function Footer() {
           href="https://www.linkedin.com/in/alexandru-r%C4%83chit%C4%83-976138186/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-black border-2 border-black px-3 py-1 rounded hover:bg-black hover:text-white transition flex items-center"
+          className="text-black border-2 link border-black px-3 py-1 rounded hover:bg-black hover:text-white transition flex items-center"
         >
           <Image
             src={linkedInlogo}

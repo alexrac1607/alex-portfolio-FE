@@ -45,7 +45,7 @@ export default function AnimatedContent() {
             <>
               <a
                 href={message.link.url}
-                className="text-black font-bold no-underline"
+                className="text-black font-bold no-underline link"
               >
                 {message.link.text}
               </a>

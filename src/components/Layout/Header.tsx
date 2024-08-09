@@ -18,13 +18,13 @@ export default function Header() {
             isOpen ? "flex" : "hidden"
           } flex-col md:flex-row md:flex space-x-0 md:space-x-4 space-y-2 md:space-y-0 items-center`}
         >
-          <a href="#" className="text-black">
+          <a href="#" className="text-black link">
             About
           </a>
-          <a href="#" className="text-black">
+          <a href="#" className="text-black link">
             Projects
           </a>
-          <a href="#" className="text-black">
+          <a href="#" className="text-black link">
             Contact
           </a>
         </nav>

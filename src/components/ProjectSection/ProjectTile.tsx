@@ -33,7 +33,7 @@ export default function ProjectTile({
           {url && (
             <a
               href={url}
-              className="font-slim text-black"
+              className="font-slim text-black link"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,7 +44,7 @@ export default function ProjectTile({
             <a
               href={githubUrl}
               target="_blank"
-              className="font-slim text-black"
+              className="font-slim text-black link"
               rel="noopener noreferrer"
             >
               GitHub
