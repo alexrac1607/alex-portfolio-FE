@@ -1,8 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Using react-icons for hamburger menu
-
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
