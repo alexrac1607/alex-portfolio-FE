@@ -17,7 +17,7 @@ export default function BlogTile({
   return (
     <div className="w-full border rounded-lg ">
       <Link href={`/posts/${id}`}>
-        <div className="flex flex-col md:flex-row items-center md:h-[200px]">
+        <div className="flex flex-col md:flex-row items-center md:h-[200px] hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100">
           {imageSrc && (
             <Image
               src={imageSrc}

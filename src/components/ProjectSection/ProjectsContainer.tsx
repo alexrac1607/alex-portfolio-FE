@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import ProjectTile from "./ProjectTile";
 import SearchBar from "./../SearchBar";

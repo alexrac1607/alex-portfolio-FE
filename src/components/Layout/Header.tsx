@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Using react-icons for hamburger menu
 
@@ -18,7 +20,7 @@ export default function Header() {
             isOpen ? "flex" : "hidden"
           } flex-col md:flex-row md:flex space-x-0 md:space-x-4 space-y-2 md:space-y-0 items-center`}
         >
-          <a href="#" className="text-black link">
+          <a href="/about" className="text-black link">
             About
           </a>
           <a href="#" className="text-black link">

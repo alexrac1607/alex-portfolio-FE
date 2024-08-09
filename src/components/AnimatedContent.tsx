@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, useEffect } from "react";
 
 export default function AnimatedContent() {
@@ -45,7 +47,7 @@ export default function AnimatedContent() {
             <>
               <a
                 href={message.link.url}
-                className="text-black font-bold no-underline link"
+                className="text-black font-bold no-underline linkd"
               >
                 {message.link.text}
               </a>

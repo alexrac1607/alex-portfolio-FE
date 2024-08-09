@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 import BlogTile from "./BlogTile";
 import SearchBar from "../SearchBar";

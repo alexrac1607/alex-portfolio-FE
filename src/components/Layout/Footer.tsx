@@ -23,6 +23,7 @@ export default function Footer() {
           className="text-black border-2 link border-black px-3 py-1 rounded hover:bg-black hover:text-white transition flex items-center"
         >
           <Image
+            priority
             src={linkedInlogo}
             alt="LinkedIn logo"
             height={50}
