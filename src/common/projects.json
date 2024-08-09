@@ -7,10 +7,16 @@
     "githubUrl": "https://github.com/alexrac1607/Robobros-react-redux-app"
   },
   {
-    "url": "https://project2.example.com",
-    "title": "Dummy",
-    "description": "Project 2 Description",
-    "imageSrc": "/images/project2.png",
-    "githubUrl": "https://github.com/user/project2"
+    "title": "Matchoji",
+    "description": "Goofy half-completed mobile game I worked on with a friend for fun - we wanted to see how easy it was to replicate all those low effort games from ads.",
+    "imageSrc": "/matchoji.jpg",
+    "githubUrl": "https://github.com/alexrac1607/matchoji"
+  },
+  {
+    "title": "Recipe Book",
+    "description": "Recipe app done in Angular with a Firebase BE: Auth, Recipe management, shopping list.",
+    "imageSrc": "/recipebook.png",
+    "githubUrl": "https://github.com/alexrac1607/Recipebook-angular-app",
+    "url": "https://angular-project-5724d.firebaseapp.com/"
   }
 ]

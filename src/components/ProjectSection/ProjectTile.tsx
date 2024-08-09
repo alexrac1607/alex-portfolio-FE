@@ -9,7 +9,7 @@ export default function ProjectTile({
   githubUrl,
 }: Project) {
   return (
-    <div className="cursor-pointer border rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 hover:shadow overflow-hidden h-full">
+    <div className="cursor-pointer border rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100overflow-hidden h-full flex flex-col">
       {imageSrc && (
         <Image
           src={imageSrc}
@@ -20,20 +20,26 @@ export default function ProjectTile({
           sizes="(min-width: 768px) 347px, 192px"
         />
       )}
-      <div className="flex flex-col items-center mr-2 ml-2">
-        <h3 className="text-xl mb-2 leading-snug font-bold border-2  border-black">
-          <p className="mr-3 ml-3">{title}</p>
-        </h3>
-        <p className="text-md leading-relaxed mb-4 mr-2 ml-2">{description}</p>
-        <div className="flex space-x-4">
-          <a
-            href={url}
-            className="font-slim text-black"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View Project
-          </a>
+      <div className="flex flex-col flex-grow justify-between p-4">
+        <div className="flex flex-col items-center">
+          <h3 className="text-xl mb-2 leading-snug font-bold border-2 border-black">
+            <p className="mr-3 ml-3">{title}</p>
+          </h3>
+          <p className="text-md leading-relaxed mb-4 mr-2 ml-2">
+            {description}
+          </p>
+        </div>
+        <div className="flex justify-center space-x-4 mt-auto">
+          {url && (
+            <a
+              href={url}
+              className="font-slim text-black"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          )}
           {githubUrl && (
             <a
               href={githubUrl}
