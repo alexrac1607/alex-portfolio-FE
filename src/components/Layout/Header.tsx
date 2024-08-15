@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="w-full border-b-2 px-4">
       <div className="max-w-6xl mx-auto w-full flex flex-col md:flex-row items-center justify-between h-20">
-        <a href="" className="text-lg md:text-2xl text-black font-light">
+        <a href="/" className="text-lg md:text-2xl text-black font-light">
           Alexandru Răchită
         </a>
         <div className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
@@ -22,7 +22,7 @@ export default function Header() {
           <a href="/about" className="text-black link">
             About
           </a>
-          <a href="#" className="text-black link">
+          <a href="/posts" className="text-black link">
             Projects
           </a>
           <a href="#" className="text-black link">

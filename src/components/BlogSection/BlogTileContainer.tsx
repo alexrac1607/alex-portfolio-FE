@@ -3,14 +3,10 @@
 import { useState } from "react";
 import BlogTile from "./BlogTile";
 import SearchBar from "../SearchBar";
+import { BlogPost } from "@/common/types";
 
 interface BlogTileContainerProps {
-  posts: Array<{
-    id: string;
-    title: string;
-    description: string;
-    imageSrc: string;
-  }>;
+  posts: BlogPost[];
 }
 
 export default function BlogTileContainer({ posts }: BlogTileContainerProps) {

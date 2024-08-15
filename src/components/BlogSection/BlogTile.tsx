@@ -4,14 +4,14 @@ import Image from "next/image";
 interface BlogTileProps {
   id: string;
   title: string;
-  description: string;
-  imageSrc: string;
+  description: string | undefined;
+  imageSrc: string | undefined;
 }
 
 export default function BlogTile({
   id,
   title,
-  description,
+  description = "",
   imageSrc,
 }: BlogTileProps) {
   return (

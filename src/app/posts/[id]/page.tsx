@@ -1,10 +1,26 @@
+// app/posts/[id]/page.tsx
+
 import { notFound } from "next/navigation";
-import posts from "@/common/posts.json";
 import Image from "next/image";
+import { BlogPost } from "@/common/types";
+import { fetchPosts } from "@/api/fetchPosts";
 
-export default function PostPage({ params }: { params: { id: string } }) {
-  const post = posts.find((post) => post.id === params.id);
+interface PostPageProps {
+  params: { id: string };
+}
 
+export async function generateStaticParams() {
+  const posts: BlogPost[] = await fetchPosts();
+
+  return posts.map((post) => ({
+    id: post.id.toString(),
+  }));
+}
+
+export default async function PostPage({ params }: PostPageProps) {
+  const posts: BlogPost[] = await fetchPosts();
+  const post = posts.find((p) => p.id == params.id);
+  console.log(params, posts);
   if (!post) {
     return notFound();
   }
