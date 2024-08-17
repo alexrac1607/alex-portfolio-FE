@@ -1,16 +1,16 @@
-export async function fetcher(url: string, options?: RequestInit) {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}${url}`, {
-    ...options,
-    headers: {
-      "Content-Type": "application/json",
-      ...options?.headers,
-    },
-  });
+"use server";
+import { revalidatePath } from "next/cache";
 
-  if (!res.ok) {
-    const error = new Error("Error");
-    throw error;
+const clearCachesByServerAction = async (path: string) => {
+  try {
+    if (path) {
+      revalidatePath(path);
+    } else {
+      revalidatePath("/");
+      revalidatePath("/[lang]");
+    }
+  } catch (error) {
+    console.error("clearCachesByServerAction=> ", error);
   }
-
-  return res.json();
-}
+};
+export default clearCachesByServerAction;
