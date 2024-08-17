@@ -5,7 +5,7 @@ import ProjectTileContainer from "@/components/ProjectSection/ProjectsContainer"
 import BlogTileContainer from "@/components/BlogSection/BlogTileContainer";
 import projects from "../common/projects.json";
 import { BlogPost } from "@/common/types";
-import { fetchPosts } from "@/api/fetchPosts";
+import { fetchPosts } from "@/dataclient/fetchPosts";
 
 export default async function HomePage() {
   const posts: BlogPost[] = await fetchPosts();

@@ -3,7 +3,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { BlogPost } from "@/common/types";
-import { fetchPosts } from "@/api/fetchPosts";
+import { fetchPosts } from "@/dataclient/fetchPosts";
 
 interface PostPageProps {
   params: { id: string };
@@ -20,7 +20,6 @@ export async function generateStaticParams() {
 export default async function PostPage({ params }: PostPageProps) {
   const posts: BlogPost[] = await fetchPosts();
   const post = posts.find((p) => p.id == params.id);
-  console.log(params, posts);
   if (!post) {
     return notFound();
   }

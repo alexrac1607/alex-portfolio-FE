@@ -1,6 +1,6 @@
 import BlogTileContainer from "@/components/BlogSection/BlogTileContainer";
 import { BlogPost } from "@/common/types";
-import { fetchPosts } from "@/api/fetchPosts";
+import { fetchPosts } from "@/dataclient/fetchPosts";
 
 export default async function PostsPage() {
   const posts: BlogPost[] = await fetchPosts();
