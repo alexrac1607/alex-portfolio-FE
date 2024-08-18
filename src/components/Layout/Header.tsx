@@ -25,7 +25,10 @@ export default function Header() {
             About
           </a>
           <a href="/posts" className="text-black link">
-            Projects
+            Blog Posts
+          </a>
+          <a href="/sign-in" className="text-black link">
+            Sign In
           </a>
           <a href="#" className="text-black link">
             Contact
