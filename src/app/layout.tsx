@@ -6,7 +6,6 @@ import "./globals.css";
 interface LayoutProps {
   children: ReactNode;
 }
-
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
