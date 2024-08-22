@@ -1,4 +1,4 @@
-import CreatePostForm from "./createPostForm";
+import CreatePostForm from "./CreatePostForm";
 
 // This is the main admin page component, which runs on the server
 export default function AdminPage() {
