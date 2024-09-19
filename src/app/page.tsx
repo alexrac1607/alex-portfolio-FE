@@ -1,15 +1,13 @@
-// app/page.tsx
+"use client";
 
 import AnimatedContent from "@/components/AnimatedContent";
 import ProjectTileContainer from "@/components/ProjectSection/ProjectsContainer";
 import BlogTileContainer from "@/components/BlogSection/BlogTileContainer";
 import projects from "../common/projects.json";
 import { BlogPost } from "@/common/types";
-import { fetchPosts } from "@/dataclient/fetchPosts";
+import posts from "../../public/posts.json";
 
-export default async function HomePage() {
-  const posts: BlogPost[] = await fetchPosts();
-
+export default function HomePage() {
   return (
     <>
       <AnimatedContent />

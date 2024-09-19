@@ -1,0 +1,19 @@
+[
+  {
+    "id": "1",
+    "title": "The Power of Habit",
+    "description": "Exploring the science behind habits and how to build positive ones.",
+    "content": "Habits shape our lives, influencing our actions and decisions. Understanding how habits work empowers us to create lasting change."
+  },
+  {
+    "id": "2",
+    "title": "Mindfulness for Beginners",
+    "description": "A gentle introduction to the practice of mindfulness and its benefits.",
+    "content": "Mindfulness is the art of being present, cultivating awareness of the present moment without judgment. It can reduce stress and improve focus."
+  },
+  {
+    "id": "3",
+    "title": "The Art of Minimalism",
+    "content": "Minimalism is about simplifying your life, focusing on what truly matters. It's a journey towards intentional living and less clutter."
+  }
+]

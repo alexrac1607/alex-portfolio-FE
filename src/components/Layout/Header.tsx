@@ -1,6 +1,5 @@
 "use client";
 
-import clearCachesByServerAction from "@/utils/fetcher";
 import { revalidatePath } from "next/cache";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
@@ -33,14 +32,6 @@ export default function Header() {
           <a href="#" className="text-black link">
             Contact
           </a>
-          <button
-            onClick={() => {
-              clearCachesByServerAction("/posts/2");
-            }}
-            className="text-black link"
-          >
-            Revalidate
-          </button>
         </nav>
       </div>
     </header>

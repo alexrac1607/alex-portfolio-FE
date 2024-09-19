@@ -24,7 +24,7 @@ export default function ProjectTileContainer({
       <SearchBar
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
-        placeholder='"Search projects - very useful search bar that is totally needed because I have a lot of projects"'
+        placeholder="Search projects - very useful search bar that is totally needed because I have a lot of projects"
       />
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-x-6 lg:gap-x-8 gap-y-5 sm:gap-y-6 lg:gap-y-8 mt-4 md:mt-8">
         {filteredProjects.map((project, index) => (
