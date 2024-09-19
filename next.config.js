@@ -5,4 +5,4 @@ const nextConfig = {
     assetPrefix: 'alex-portfolio-FE/'
 };
 
-export default nextConfig;
+module.exports = nextConfig
