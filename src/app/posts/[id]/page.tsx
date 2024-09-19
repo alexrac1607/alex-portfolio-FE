@@ -2,6 +2,10 @@ import { notFound } from "next/navigation";
 import posts from "@/common/posts.json";
 import Image from "next/image";
 
+export async function generateStaticParams() {
+  return posts.map((post) => ({ id: post.id }));
+}
+
 export default function PostPage({ params }: { params: { id: string } }) {
   const post = posts.find((post) => post.id === params.id);
 
