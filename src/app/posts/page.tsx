@@ -1,4 +1,3 @@
-"use client";
 import BlogTileContainer from "@/components/BlogSection/BlogTileContainer";
 import posts from "../../../public/posts.json";
 

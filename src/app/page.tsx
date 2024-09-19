@@ -5,7 +5,7 @@ import ProjectTileContainer from "@/components/ProjectSection/ProjectsContainer"
 import BlogTileContainer from "@/components/BlogSection/BlogTileContainer";
 import projects from "../common/projects.json";
 import { BlogPost } from "@/common/types";
-import posts from "../../public/posts.json";
+import posts from "@/common/posts.json";
 
 export default function HomePage() {
   return (
