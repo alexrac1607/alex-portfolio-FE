@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     distDir: 'out',
-    output: 'export',
-    basePath: '/alex-portfolio-FE'
+    basePath: '/alex-portfolio-FE',
+    assetPrefix: 'alex-portfolio-FE/'
 };
 
 export default nextConfig;

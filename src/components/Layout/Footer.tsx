@@ -1,5 +1,4 @@
 import Image from "next/image";
-import linkedInlogo from "./../../../public/LI-Logo.png";
 
 export default function Footer() {
   return (
@@ -24,7 +23,7 @@ export default function Footer() {
         >
           <Image
             priority
-            src={linkedInlogo}
+            src="/LI-Logo"
             alt="LinkedIn logo"
             height={50}
             width={120}
