@@ -3,12 +3,14 @@
     "id": "1",
     "title": "My First Blog Post",
     "description": "This is a short description of my first blog post.",
-    "content": "This is the detailed content of the first blog post."
+    "content": "This is the detailed content of the first blog post.",
+    "imageSrc": ""
   },
   {
     "id": "2",
     "title": "Another Interesting Post",
     "description": "This blog post discusses another interesting topic.",
-    "content": "This is the detailed content of the second blog post."
+    "content": "This is the detailed content of the second blog post.",
+    "imageSrc": ""
   }
 ]
