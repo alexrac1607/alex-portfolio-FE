@@ -2,14 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import getConfig from "next/config";
 
+const { publicRuntimeConfig } = getConfig();
+
 interface BlogTileProps {
   id: string;
   title: string;
   description: string | undefined;
   imageSrc: string | undefined;
 }
-
-const { publicRuntimeConfig } = getConfig();
 
 export default function BlogTile({
   id,
