@@ -1,4 +1,6 @@
 import Image from "next/image";
+import getConfig from "next/config";
+const { publicRuntimeConfig } = getConfig();
 
 export default function Footer() {
   return (
@@ -23,7 +25,7 @@ export default function Footer() {
         >
           <Image
             priority
-            src="/LI-Logo"
+            src={`${publicRuntimeConfig.basePath}/LI-Logo.png`}
             alt="LinkedIn logo"
             height={50}
             width={120}
