@@ -3,10 +3,11 @@ const nextConfig = {
     distDir: 'out',
     basePath: '/alex-portfolio-FE',
     assetPrefix: '/alex-portfolio-FE/',
-    output: 'export',
+    output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
     publicRuntimeConfig: {
-        basePath: '/alex-portfolio-FE', 
+      basePath: process.env.NODE_ENV === 'production' ? '/alex-portfolio-FE' : '',
     },
-};
-
-module.exports = nextConfig
+  };
+  
+  module.exports = nextConfig;
+  
