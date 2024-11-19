@@ -9,12 +9,11 @@ export default function ProjectTile({
   githubUrl,
 }: Project) {
   const adjustedImageSrc = `${process.env.BASE_PATH}${imageSrc}`;
-  console.log(process.env.BASE_PATH);
   return (
     <div className="cursor-pointer border rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 overflow-hidden h-full flex flex-col">
       {imageSrc && (
         <Image
-          src={adjustedImageSrc} // Use adjusted imageSrc here
+          src={adjustedImageSrc}
           alt={description}
           className="border-b md:h-[180px] object-cover object-center"
           width={430}
