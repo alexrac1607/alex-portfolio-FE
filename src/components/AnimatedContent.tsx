@@ -6,7 +6,7 @@ export default function AnimatedContent() {
   const [step, setStep] = useState(0);
   const messages = [
     {
-      text: "Welcome to My Portfolio!",
+      text: "Welcome to My Portfolio! test",
       className: "text-3xl md:text-5xl mt-6 mb-4",
     },
     {
