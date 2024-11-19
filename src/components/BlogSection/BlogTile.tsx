@@ -1,8 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import getConfig from "next/config";
-
-const { publicRuntimeConfig } = getConfig();
 
 interface BlogTileProps {
   id: string;
@@ -17,8 +14,7 @@ export default function BlogTile({
   description = "",
   imageSrc,
 }: BlogTileProps) {
-  const adjustedImageSrc = `${publicRuntimeConfig.basePath}${imageSrc}`;
-
+  const adjustedImageSrc = `${process.env.BASE_PATH}${imageSrc}`;
   return (
     <div className="w-full border rounded-lg ">
       <Link href={`/posts/${id}`}>

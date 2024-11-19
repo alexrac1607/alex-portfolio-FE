@@ -1,8 +1,5 @@
 import { Project } from "@/common/types";
 import Image from "next/image";
-import getConfig from "next/config";
-
-const { publicRuntimeConfig } = getConfig();
 
 export default function ProjectTile({
   url,
@@ -11,8 +8,8 @@ export default function ProjectTile({
   imageSrc,
   githubUrl,
 }: Project) {
-  const adjustedImageSrc = `${publicRuntimeConfig.basePath}${imageSrc}`;
-
+  const adjustedImageSrc = `${process.env.BASE_PATH}${imageSrc}`;
+  console.log(process.env.BASE_PATH);
   return (
     <div className="cursor-pointer border rounded-md md:w-full scale-100 hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100 overflow-hidden h-full flex flex-col">
       {imageSrc && (
