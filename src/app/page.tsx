@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <>
       <AnimatedContent />
-      <ProjectTileContainer projects={projects} />
+      {/* <ProjectTileContainer projects={projects} /> */}
       <BlogTileContainer posts={posts} />
     </>
   );
