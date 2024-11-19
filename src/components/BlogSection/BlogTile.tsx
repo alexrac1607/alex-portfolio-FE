@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import getConfig from "next/config";
 
 interface BlogTileProps {
   id: string;
@@ -8,19 +9,23 @@ interface BlogTileProps {
   imageSrc: string | undefined;
 }
 
+const { publicRuntimeConfig } = getConfig();
+
 export default function BlogTile({
   id,
   title,
   description = "",
   imageSrc,
 }: BlogTileProps) {
+  const adjustedImageSrc = `${publicRuntimeConfig.basePath}${imageSrc}`;
+
   return (
     <div className="w-full border rounded-lg ">
       <Link href={`/posts/${id}`}>
         <div className="flex flex-col md:flex-row items-center md:h-[200px] hover:scale-[1.02] active:scale-[0.97] motion-safe:transform-gpu transition duration-100 motion-reduce:hover:scale-100">
           {imageSrc && (
             <Image
-              src={imageSrc}
+              src={adjustedImageSrc}
               alt={description}
               className="md:w-1/3 h-full object-cover"
               width={300}
